@@ -3,7 +3,7 @@ var gifs = ["cat", "dog", "snake", "tiger", "wolf", "lion", "bear", "parrot", "g
 //displays content
 function displayGifInfo(){
 	var gif = $(this).attr("data-name");
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=dc6zaTOxFJmzC&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 	//creates ajax
 	$.ajax({url: queryURL, method: 'GET'}).done(function(response){
